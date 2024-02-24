@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Online Application Login Page</title>
+<style type = "text/css">
+div { text-align: center;
+width:30%;
+height:60%;
+position: center;
+left: 50%;
+border-width: 5px }
+.medium { border-width: medium }
+.thin { border-width: thin }
+.solid { border-style: solid }
+.double { border-style: double }
+.groove { border-style: groove }
+.inset { border-style: inset }
+.outset { border-style: outset }
+.dashed { border-style: dashed }
+.yellow { border-color: yellow }
+.blue { border-color: blue; 
+background-color:pink}
+</style>
+</head>
+<body bgcolor="skyblue"><center><br><br><br><br><br><br>
+<div class = "solid double outside blue thin medium groove " bgcolor="pink">
+<form action="login.html" method="GET/POST">
+<center><table border="0" height="20%" width="30%" cellspacing="1" cellpadding="1">
+<thead>
+<tr>
+<td><center><br>
+<img src="Admin.jpg" width="60%" height="60%"></img></td>
+<tr>
+<td><center>
+<label><font color="black"><h2>Adminstrator Id</h2></font></label></font>
+<input type="text"   placeholder="Admin Id"   size="25" maxlength="12" </input type>
+</td><br>
+<tr>
+<td><center>
+<label><font color="black"><h2>Password</h2></font></label>
+<input type="password" autocomplete="on" placeholder="Password"  maxlength="10" size="25" id="password" name="password" onchange = "PasswordChk();" class="form-control mandatoryinput" onkeypress="return isNumber(this,event); " >
+<span class="errortxt"></span></center>
+</td>
+<tr>
+</table>
+<input type="submit" value="Submit"></input>
+<input type="reset" value="Reset"></input>
+</form>
+</div>
+</center>
+</body>
+</html>
